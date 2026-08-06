@@ -12,10 +12,14 @@ from email.mime.multipart import MIMEMultipart
 from streamlit_lottie import st_lottie
 import requests
 from streamlit_option_menu import option_menu
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 # --- Configuration page ---
-st.set_page_config(page_title="Plateforme Intelligente", layout="wide")  # ← هذا يجب أن يكون أول سطر بعد import streamlit
+st.set_page_config(page_title="Plateforme Intelligente", layout="wide")  
 st.markdown("""
     <h1 style="
         text-align: center;
@@ -389,8 +393,8 @@ if uploaded_file:
 # === Fonction d'envoi d'email ===
 def envoyer_email(nom, email_utilisateur, message_commande):
     sender_email = "berradaniema@gmail.com"
-    receiver_email = "berradaniema@gmail.com"
-    password = "xnbx nghu duyt pojd"  # mot de passe d'application Gmail
+    expediteur_email = os.getenv("EMAIL")
+    mot_de_passe = os.getenv("EMAIL_PASSWORD")
 
     message = MIMEMultipart()
     message["Subject"] = f"Nouvelle commande de {nom}"
