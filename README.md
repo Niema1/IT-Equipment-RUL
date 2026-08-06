@@ -45,7 +45,7 @@ Cette application permet d'identifier les équipements nécessitant un remplacem
 
 ## Auteur
 *Niema Berrada*
-Ingénieure d'État en Génie Informatique – Data Science
+   Ingénieure d'État en Génie Informatique – Data Science
 
 ## ⚠️ Données
 Les jeux de données utilisés durant ce projet ne sont pas inclus dans ce dépôt en raison de leur caractère confidentiel.
