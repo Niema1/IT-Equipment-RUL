@@ -44,7 +44,7 @@ Le projet repose sur :
 Cette application permet d'identifier les équipements nécessitant un remplacement prochain et d'aider à optimiser la gestion du parc informatique.
 
 ## Auteur
-Niema Berrada
+*Niema Berrada*
 Ingénieure d'État en Génie Informatique – Data Science
 
 ## ⚠️ Données
